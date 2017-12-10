@@ -20,7 +20,7 @@
 	<p align="center">
 	<button class="button" type="button" onclick="changetitle(1)">迫害</button>
 	<button class="button" type="button" onclick="changetitle(0)">仆街</button>
-	update at:1-12-2017
+	update at:8-12-2017
 	</p>
 
 	<div class="table, th, td"><table>
@@ -41,17 +41,17 @@
 	</p>
 
 	<script>
-	var AMMeeting=5,PMMeeting=5,SIMeeting=3,SL=-10,Doc=-5,Legco=15,CGCHall=10,CGCRm=7,EPD=10,EDB=1,AFCD=3,Feh=6,HQ=6,CW=5,East=5,South=10,WC=5,KC=5,KT=2,SSP=2,YTM=2,WTS=2,Island=5,KandT=2,North=1,SK=7,ST=2,STDC=8,TP=1,TW=1,TM=7,YL=5;
-	var points_CC=EPD+East+KT+KandT+CW;
-	var points_CSW=CGCHall+KC+Legco+AMMeeting+Feh+Legco+AMMeeting+Feh;
-	var points_LCK=CGCRm+Feh+WC+KC+YL+TP+SIMeeting+CGCRm;
-	var points_LHM=EPD+WTS+AFCD+SIMeeting+Legco+AMMeeting+Legco+East;
-	var points_LKC=CGCRm+WTS+KC+CW+KT+SK+HQ+South;
-	var points_LST=TM+TM+Feh+TM+CW+SIMeeting+Legco+East;
-	var points_TTF=EDB+ST+KandT+SIMeeting+KC;
-	var points_TYM=CGCRm+KT+KandT+SIMeeting+SSP+YTM+Feh;
-	var points_YCM=SSP+KandT+East+ST+East+PMMeeting+AFCD+East+PMMeeting+HQ+South;
-	var points_YPM=CGCHall+CGCHall+Legco+SIMeeting+AFCD+SIMeeting+EDB+WTS;
+	var AMMeeting=5,PMMeeting=5,SIMeeting=3,SL=-10,Doc=-5,Legco=15,CGCHall=10,CGCRm=7,EPD=10,EDB=1,AFCD=3,Feh=6,HQ=6,CW=5,East=5,South=10,WC=5,KC=3,KT=4,SSP=2,YTM=2,WTS=2,Island=5,KandT=2,North=1,SK=6,ST=2,STDC=6,TP=1,TW=1,TM=5,YL=5;
+	var points_CC=KC+WTS+KandT+SSP+TW+KC+EPD;
+	var points_CSW=CGCHall+CGCHall+Legco+CGCRm+Legco+AMMeeting+East+CGCRm;
+	var points_LCK=EDB+Island+CGCRm+South+PMMeeting+CGCHall+North+SIMeeting+TW+TM;
+	var points_LHM=Legco+Legco+AMMeeting+Legco+CGCHall+PMMeeting+KandT+CW+PMMeeting;
+	var points_LKC=North+Feh+Island+Feh+East+SIMeeting;
+	var points_LST=YTM+WTS+EDB+EDB+EDB;
+	var points_TTF=ST+STDC+SSP+TW+STDC+KT+WC+SIMeeting;
+	var points_TYM=North+CGCRm+KT+SSP+TW;
+	var points_YCM=SSP+WC+SIMeeting+STDC+ST+CGCRm+SIMeeting+CGCRm;
+	var points_YPM=ST+Legco+CGCRm+ST+STDC;
 
 	if(points_CC==points_CSW)
 	{points_CC+=1;}
