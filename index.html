@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	
-	<title>PCCWSOLUTION</title>
+	<title>PKKDog</title>
 	<style type="text/css">
 	.head{background-color:#00FF00;color:black;font-weight:bold;font-size:50px;text-align:center;padding:30px}
 	.table, th ,td{border-collapse:collapse;border:1px solid black;width:950px;height:30px;font-size:40px;text-align:center;}
@@ -41,17 +41,17 @@
 	</p>
 
 	<script>
-	var AMMeeting=5,PMMeeting=5,SIMeeting=3,SL=-10,Doc=-5,Legco=15,CGCHall=10,CGCRm=7,EPD=10,EDB=1,AFCD=3,Feh=6,HQ=6,CW=5,East=5,South=10,WC=5,KC=3,KT=4,SSP=2,YTM=2,WTS=2,Island=5,KandT=2,North=1,SK=6,ST=2,STDC=6,TP=1,TW=1,TM=5,YL=5;
+	var AMMeeting=5,PMMeeting=5,SIMeeting=3,Faraway=3,SL=-10,Doc=-5,Legco=15,CGCHall=10,CGCRm=7,EPD=10,EDB=1,AFCD=3,Feh=6,HQ=6,CW=5,East=5,South=10,WC=5,KC=3,KT=4,SSP=2,YTM=2,WTS=2,Island=5,KandT=2,North=1,SK=6,ST=2,STDC=6,TP=1,TW=1,TM=5,YL=5;
 	var points_CC=KC+WTS+KandT+SSP+TW+KC+EPD;
-	var points_CSW=CGCHall+CGCHall+Legco+CGCRm+Legco+AMMeeting+East+CGCRm;
-	var points_LCK=EDB+Island+CGCRm+South+PMMeeting+CGCHall+North+SIMeeting+TW+TM;
+	var points_CSW=CGCHall+CGCHall+Legco+CGCRm+Legco+AMMeeting+East+Faraway+CGCRm;
+	var points_LCK=EDB+Island+CGCRm+South+PMMeeting+CGCHall+North+Faraway+SIMeeting+TW+TM;
 	var points_LHM=Legco+Legco+AMMeeting+Legco+CGCHall+PMMeeting+KandT+CW+PMMeeting;
-	var points_LKC=North+Feh+Island+Feh+East+SIMeeting;
+	var points_LKC=North+Faraway+Feh+Island+Feh+East+SIMeeting;
 	var points_LST=YTM+WTS+EDB+EDB+EDB;
-	var points_TTF=ST+STDC+SSP+TW+STDC+KT+WC+SIMeeting;
-	var points_TYM=North+CGCRm+KT+SSP+TW;
-	var points_YCM=SSP+WC+SIMeeting+STDC+ST+CGCRm+SIMeeting+CGCRm;
-	var points_YPM=ST+Legco+CGCRm+ST+STDC;
+	var points_TTF=WC+PMMeeting+STDC+SSP+TW+STDC+KT+WC+SIMeeting;
+	var points_TYM=North+Faraway+CGCRm+KT+SSP+TW;
+	var points_YCM=SSP+ST+STDC+ST+CGCRm+SIMeeting+CGCRm;
+	var points_YPM=ST+Legco+AMMeeting+CGCRm+ST+STDC;
 
 	if(points_CC==points_CSW)
 	{points_CC+=1;}
