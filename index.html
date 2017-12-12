@@ -156,6 +156,7 @@
 	var points = [points_LHM,points_YPM,points_LKC,points_TTF,points_CSW,points_YCM,points_TYM,points_LST,points_CC,points_LCK];
 	points.sort(function(a, b){return b-a});
 	
+	function Checkrank(){
 	if(points[0]==points_LHM){
 	document.getElementById("r1name").innerHTML = "LHM";}
 	else if(points[0]==points_YPM){
@@ -260,116 +261,15 @@
 	document.getElementById("r5name").innerHTML = "CC";}
 	else if(points[4]==points_LCK){
 	document.getElementById("r5name").innerHTML = "LCK";}
-	
+	}
+	Checkrank();
+
 	function changetitle(sw){
 	if(sw==1){
 	document.getElementById("title").innerHTML = "迫害排行榜";
 	document.getElementById("btn1").style.backgroundColor="#4CAF50";
 	document.getElementById("btn2").style.backgroundColor="#e7e7e7";
-	if(points[0]==points_LHM){
-	document.getElementById("r1name").innerHTML = "LHM";}
-	else if(points[0]==points_YPM){
-	document.getElementById("r1name").innerHTML = "YPM";}
-	else if(points[0]==points_LKC){
-	document.getElementById("r1name").innerHTML = "LKC";}
-	else if(points[0]==points_TTF){
-	document.getElementById("r1name").innerHTML = "TTF";}
-	else if(points[0]==points_CSW){
-	document.getElementById("r1name").innerHTML = "CSW";}
-	else if(points[0]==points_YCM){
-	document.getElementById("r1name").innerHTML = "YCM";}
-	else if(points[0]==points_TYM){
-	document.getElementById("r1name").innerHTML = "TYM";}
-	else if(points[0]==points_LST){
-	document.getElementById("r1name").innerHTML = "LST";}
-	else if(points[0]==points_CC){
-	document.getElementById("r1name").innerHTML = "CC";}
-	else if(points[0]==points_LCK){
-	document.getElementById("r1name").innerHTML = "LCK";}
-
-	if(points[1]==points_LHM){
-	document.getElementById("r2name").innerHTML = "LHM";}
-	else if(points[1]==points_YPM){
-	document.getElementById("r2name").innerHTML = "YPM";}
-	else if(points[1]==points_LKC){
-	document.getElementById("r2name").innerHTML = "LKC";}
-	else if(points[1]==points_TTF){
-	document.getElementById("r2name").innerHTML = "TTF";}
-	else if(points[1]==points_CSW){
-	document.getElementById("r2name").innerHTML = "CSW";}
-	else if(points[1]==points_YCM){
-	document.getElementById("r2name").innerHTML = "YCM";}
-	else if(points[1]==points_TYM){
-	document.getElementById("r2name").innerHTML = "TYM";}
-	else if(points[1]==points_LST){
-	document.getElementById("r2name").innerHTML = "LST";}
-	else if(points[1]==points_CC){
-	document.getElementById("r2name").innerHTML = "CC";}
-	else if(points[1]==points_LCK){
-	document.getElementById("r2name").innerHTML = "LCK";}
-
-	if(points[2]==points_LHM){
-	document.getElementById("r3name").innerHTML = "LHM";}
-	else if(points[2]==points_YPM){
-	document.getElementById("r3name").innerHTML = "YPM";}
-	else if(points[2]==points_LKC){
-	document.getElementById("r3name").innerHTML = "LKC";}
-	else if(points[2]==points_TTF){
-	document.getElementById("r3name").innerHTML = "TTF";}
-	else if(points[2]==points_CSW){
-	document.getElementById("r3name").innerHTML = "CSW";}
-	else if(points[2]==points_YCM){
-	document.getElementById("r3name").innerHTML = "YCM";}
-	else if(points[2]==points_TYM){
-	document.getElementById("r3name").innerHTML = "TYM";}
-	else if(points[2]==points_LST){
-	document.getElementById("r3name").innerHTML = "LST";}
-	else if(points[2]==points_CC){
-	document.getElementById("r3name").innerHTML = "CC";}
-	else if(points[2]==points_LCK){
-	document.getElementById("r3name").innerHTML = "LCK";}
-
-	if(points[3]==points_LHM){
-	document.getElementById("r4name").innerHTML = "LHM";}
-	else if(points[3]==points_YPM){
-	document.getElementById("r4name").innerHTML = "YPM";}
-	else if(points[3]==points_LKC){
-	document.getElementById("r4name").innerHTML = "LKC";}
-	else if(points[3]==points_TTF){
-	document.getElementById("r4name").innerHTML = "TTF";}
-	else if(points[3]==points_CSW){
-	document.getElementById("r4name").innerHTML = "CSW";}
-	else if(points[3]==points_YCM){
-	document.getElementById("r4name").innerHTML = "YCM";}
-	else if(points[3]==points_TYM){
-	document.getElementById("r4name").innerHTML = "TYM";}
-	else if(points[3]==points_LST){
-	document.getElementById("r4name").innerHTML = "LST";}
-	else if(points[3]==points_CC){
-	document.getElementById("r4name").innerHTML = "CC";}
-	else if(points[3]==points_LCK){
-	document.getElementById("r4name").innerHTML = "LCK";}
-
-	if(points[4]==points_LHM){
-	document.getElementById("r5name").innerHTML = "LHM";}
-	else if(points[4]==points_YPM){
-	document.getElementById("r5name").innerHTML = "YPM";}
-	else if(points[4]==points_LKC){
-	document.getElementById("r5name").innerHTML = "LKC";}
-	else if(points[4]==points_TTF){
-	document.getElementById("r5name").innerHTML = "TTF";}
-	else if(points[4]==points_CSW){
-	document.getElementById("r5name").innerHTML = "CSW";}
-	else if(points[4]==points_YCM){
-	document.getElementById("r5name").innerHTML = "YCM";}
-	else if(points[4]==points_TYM){
-	document.getElementById("r5name").innerHTML = "TYM";}
-	else if(points[4]==points_LST){
-	document.getElementById("r5name").innerHTML = "LST";}
-	else if(points[4]==points_CC){
-	document.getElementById("r5name").innerHTML = "CC";}
-	else if(points[4]==points_LCK){
-	document.getElementById("r5name").innerHTML = "LCK";}
+	Checkrank();
 	}
 	else{
 	document.getElementById("title").innerHTML = "仆街排行榜";
