@@ -262,19 +262,8 @@
 	else if(points[4]==points_LCK){
 	document.getElementById("r5name").innerHTML = "LCK";}
 	}
-	Checkrank();
 
-	function changetitle(sw){
-	if(sw==1){
-	document.getElementById("title").innerHTML = "迫害排行榜";
-	document.getElementById("btn1").style.backgroundColor="#4CAF50";
-	document.getElementById("btn2").style.backgroundColor="#e7e7e7";
-	Checkrank();
-	}
-	else{
-	document.getElementById("title").innerHTML = "仆街排行榜";
-	document.getElementById("btn1").style.backgroundColor="#e7e7e7";
-	document.getElementById("btn2").style.backgroundColor="#4CAF50";
+	Checkpkrank(){
 	if(points[9]==points_LHM){
 	document.getElementById("r1name").innerHTML = "LHM";}
 	else if(points[9]==points_YPM){
@@ -379,6 +368,22 @@
 	document.getElementById("r5name").innerHTML = "CC";}
 	else if(points[5]==points_LCK){
 	document.getElementById("r5name").innerHTML = "LCK";}
+	}
+	
+	Checkrank();
+
+	function changetitle(sw){
+	if(sw==1){
+	document.getElementById("title").innerHTML = "迫害排行榜";
+	document.getElementById("btn1").style.backgroundColor="#4CAF50";
+	document.getElementById("btn2").style.backgroundColor="#e7e7e7";
+	Checkrank();
+	}
+	else{
+	document.getElementById("title").innerHTML = "仆街排行榜";
+	document.getElementById("btn1").style.backgroundColor="#e7e7e7";
+	document.getElementById("btn2").style.backgroundColor="#4CAF50";
+	Checkpkrank();
 	}
 	}
 	</script>
