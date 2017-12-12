@@ -8,7 +8,8 @@
 	.head{background-color:#00FF00;color:black;font-weight:bold;font-size:50px;text-align:center;padding:30px}
 	.table, th ,td{border-collapse:collapse;border:1px solid black;width:950px;height:30px;font-size:40px;text-align:center;}
 	li{display:inline;background-color: #dddddd;}
-	.button{padding: 15px 32px;text-align: center;}
+	.button1{background-color:#4CAF50;padding: 15px 32px;text-align: center;}
+	.button2{background-color:#e7e7e7;padding:15px 32px;text-align:center;}
 
 
 </head>
@@ -18,8 +19,8 @@
 
 	<HR color="#000000" size="5"></HR>
 	<p align="center">
-	<button class="button" type="button" onclick="changetitle(1)">迫害</button>
-	<button class="button" type="button" onclick="changetitle(0)">仆街</button>
+	<button class="button1" type="button" onclick="changetitle(1)" id="btn1">迫害</button>
+	<button class="button2" type="button" onclick="changetitle(0)" id="btn2">仆街</button>
 	update at:12-12-2017
 	</p>
 
@@ -263,6 +264,8 @@
 	function changetitle(sw){
 	if(sw==1){
 	document.getElementById("title").innerHTML = "迫害排行榜";
+	document.getElementById("btn1").style.backgroundColor="#4CAF50";
+	document.getElementById("btn2").style.backgroundColor="#e7e7e7";
 	if(points[0]==points_LHM){
 	document.getElementById("r1name").innerHTML = "LHM";}
 	else if(points[0]==points_YPM){
@@ -370,6 +373,8 @@
 	}
 	else{
 	document.getElementById("title").innerHTML = "仆街排行榜";
+	document.getElementById("btn1").style.backgroundColor="#e7e7e7";
+	document.getElementById("btn2").style.backgroundColor="#4CAF50";
 	if(points[9]==points_LHM){
 	document.getElementById("r1name").innerHTML = "LHM";}
 	else if(points[9]==points_YPM){
