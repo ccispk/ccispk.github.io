@@ -14,14 +14,14 @@
 
 </head>
 	</style>
-<body style="margin:0px;background-color:#eeeeee;background-size:700px 480px;" background="merrychrismax.jpg">
+<body style="margin:0px;background-color:#eeeeee;background-size:700px 480px;">
 	<div class="head" id="title">迫害排行榜</div>
 
 	<HR color="#000000" size="5"></HR>
 	<p align="center">
 	<button class="button1" type="button" onclick="changetitle(1)" id="btn1">迫害</button>
 	<button class="button2" type="button" onclick="changetitle(0)" id="btn2">仆街</button>
-	update at:17-12-2017
+	update at:5-1-2018
 	</p>
 
 	<div class="table, th, td"><table>
@@ -42,17 +42,17 @@
 	</p>
 
 	<script>
-	var AMMeeting=5,PMMeeting=5,SIMeeting=3,Faraway=3,SL=-10,Doc=-5,Legco=15,LegcoF=10,CGCHall=8,CGCRm=6,EPD=10,EDB=1,AFCD=3,Feh=6,HQ=6,CW=5,East=5,South=10,WC=5,KC=3,KT=4,SSP=2,YTM=2,WTS=2,Island=5,KandT=2,North=1,SK=6,ST=2,STDC=6,TP=1,TW=1,TM=5,YL=5;
-	var points_CC=South+KandT+East+SSP+CGCRm+HQ+KandT+South;
-	var points_CSW=CGCHall+CGCHall+CGCRm+YTM;
-	var points_LCK=TM+CGCRm+YTM+Legco+TW;
-	var points_LHM=Island+SIMeeting+Legco+Legco+AMMeeting+AFCD;
-	var points_LKC=YTM+ST+East+CGCHall+Feh+WC+SIMeeting;
-	var points_LST=CGCRm+CGCRm+WTS+EDB+South+Faraway;
-	var points_TTF=YTM+ST+North+YTM+ST+PMMeeting+Feh+Legco+North;
-	var points_TYM=SSP+AFCD+TW+KC+WC+YTM+TW;
-	var points_YCM=CGCRm+YTM+HQ+KandT+North;
-	var points_YPM=North+CGCRm+ST+Legco+Legco+CGCRm;
+	var AM=5,PM=5,SI=3,Faraway=3,SL=-10,Doc=-5,Legco=15,LegcoF=10,WKLCB=4,CGCHall=8,CGCRm=6,EPD=6,EDB=1,AFCD=3,FEH=6,HQ=6,CW=5,East=5,South=10,WC=5,KC=3,KT=4,SSP=2,YTM=2,WTS=2,Island=5,KandT=2,North=1,SK=5,ST=2,STDC=6,TP=1,TW=1,TM=5,YL=5;
+	var points_CC=EPD+SK+TP+Faraway+SK+KC+ST;
+	var points_CSW=CGCHall+Legco+AM+CGCRm+Legco+CGCHall+CGCHall+TW;
+	var points_LCK=TW+FEH+CGCRm+STDC+YL;
+	var points_LHM=Legco+AM+WKLCB+WKLCB+WKLCB+WKLCB;
+	var points_LKC=North+Faraway+WTS+SI+CGCRm+KandT+CGCRm;
+	var points_LST=EDB+TW+EDB+TP+YTM+TP;
+	var points_TTF=STDC+PM+Legco+AM;
+	var points_TYM=Island+SI+YTM+WKLCB+TW+TP;
+	var points_YCM=EPD+STDC+KandT+Faraway+YL+Faraway;
+	var points_YPM=CGCRm+STDC+CGCRm+STDC+Legco+EDB;
 
 	if(points_CC==points_CSW)
 	{points_CC+=1;}
