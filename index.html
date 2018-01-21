@@ -21,7 +21,7 @@
 	<p align="center">
 	<button class="button1" type="button" onclick="changetitle(1)" id="btn1">迫害</button>
 	<button class="button2" type="button" onclick="changetitle(0)" id="btn2">仆街</button>
-	update at:12-1-2018
+	update at:19-1-2018
 	</p>
 
 	<div class="table, th, td"><table>
@@ -42,17 +42,18 @@
 	</p>
 
 	<script>
-	var AM=5,PM=5,SI=3,Faraway=3,SL=-10,Doc=-5,Legco=15,LegcoF=10,WKLCB=4,CGCHall=8,CGCRm=6,EPD=6,EDB=1,AFCD=3,FEH=6,HQ=6,CW=5,East=5,South=10,WC=5,KC=3,KT=4,SSP=2,YTM=2,WTS=2,Island=5,KandT=2,North=1,SK=5,ST=2,STDC=6,TP=1,TW=1,TM=5,YL=5;
-	var points_CC=Island+WC+KT+SK+CW;
-	var points_CSW=CGCRm+FEH+Legco+Legco+AM+Legco+AM+Legco;
-	var points_LCK=YL+North+WTS+KT+AFCD+YL+YL;
-	var points_LHM=CGCRm+CGCHall+SI+CGCRm+CGCRm+CGCRm;
-	var points_LKC=TW+AFCD+SK+South+PM+CGCRm+CGCRm+CGCRm+CGCRm;
-	var points_LST=ST+EDB+EDB+EDB+TW+EDB;
-	var points_TTF=Legco+STDC+Legco+Legco+KC+WC+PM;
-	var points_TYM=EDB+East+WC+North+TM;
-	var points_YCM=South+SI+STDC+YL+South+TW;
-	var points_YPM=North+North+WTS+CGCRm+CGCRm+CGCRm+CGCRm;
+	var AM=5,PM=5,SI=3,Faraway=3,SL=-10,Doc=-5,Legco=15,LegcoF=10,WKLCB=3,CGCHall=8,CGCRm=6,EPD=6,EDB=1,AFCD=3,FEH=6,HQ=6,CW=5,East=5,South=10,WC=5,KC=3,KT=4,SSP=2,YTM=2,WTS=2,Island=5,KandT=2,North=1,SK=5,ST=2,STDC=6,TP=1,TW=1,TM=5,YL=5;
+	var points_CC=SSP+SK+KT+SSP+SSP+WTS+EPD;
+	var points_CSW=YL+CGCHall+SI+CGCHall+Legco+AM+CGCHall+SI;
+	var points_LCK=CGCRm+Island+SI+East+YL+TP+Faraway+EDB+EDB;
+	var points_LHM=WKLCB+WKLCB+Legco+AM+WKLCB+WKLCB+Legco;
+	var points_LKC=CGCRm+SK+WTS+KC+CGCRm+CW+AFCD;
+	var points_LST=Island+EDB+EDB+YL+KC;
+	var points_TTF=AFCD+Island+WC+AFCD+SI+Legco+STDC+HQ;
+	var points_TYM=South+SI+Faraway+South+Faraway+WC+SSP+SSP+WTS+CW;
+	var points_YCM=TW+EDB+KC+South+SI+KC;
+	var points_YPM=WKLCB+WKLCB+Legco+AM+HQ+Legco+STDC+EPD;
+
 
 	if(points_CC==points_CSW)
 	{points_CC+=1;}
